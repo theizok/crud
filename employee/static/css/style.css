@@ -1,0 +1,168 @@
+body {
+    background:lavender ;
+    height: 100%;
+    margin: 25px 0;
+    padding-left: 300px;
+}
+
+header.titulo{
+
+    font-family: monospace;
+    color: darkred;
+    border-color: darkred;
+    border-width: 3px;
+    border-style: solid;
+    max-width: 250px;
+    font-size: 30px;
+
+}
+
+h3.texto{
+    font-family: monospace;
+    color: darkblue;
+    border-color: darkslateblue;
+    border-width: 3px;
+    border-style: solid;
+    max-width: 250px;
+    font-size: large;
+
+}
+
+h1.titulo{
+font-family: monospace;
+color: darkred;
+border-color: darkred;
+border-width: 3px;
+border-style: solid;
+max-width: 250px;
+}
+
+
+h1.titulo2{
+
+    font-family: monospace;
+    color: darkred;
+    
+    border-width: 3px;
+    border-style: solid;
+    max-width: 250px;
+
+}
+
+h1.titulo3{
+  
+    font-family: monospace;
+    color: darkblue;
+    border-width: 3px;
+    border-style: solid;
+    max-width: 250px;
+  
+
+
+}
+
+h3.titulo{
+    background-color: rgb(226, 125, 18);
+    border-radius: 8px;
+   
+    max-width: 120px;
+    max-inline-size: 150px;
+  
+}
+
+p.nombre{
+
+background-color: rgb(19, 165, 209);
+border-radius: 8px;
+max-width: 120px;
+max-inline-size: 150px;
+border-color: black;
+border-width: 1px;
+border-style: solid;
+}
+
+p.id{
+background-color: rgb(19, 165, 209);
+border-radius: 10px;
+max-width: 125px;
+max-inline-size: 150px;
+border-color: black;
+border-width: 1px;
+border-style: solid;
+}
+
+p.correo{
+    background-color: rgb(19, 165, 209);
+    color:black;
+    border-radius: 10px;
+    max-width: 125px;
+   max-inline-size: 150px;
+   border-color: black;
+   border-width: 1px;
+   border-style: solid;
+   }
+
+p.contacto{
+    background-color: rgb(19, 165, 209);
+    border-radius: 10px;
+    max-width: 125px;
+    max-inline-size: 150px;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+}
+
+
+p.pedido{
+    background-color: rgb(19, 165, 209);
+    border-radius: 10px;
+    max-width: 125px;
+    max-inline-size: 150px;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+}
+
+
+
+
+p.distribuidor{
+    background-color: rgb(19, 165, 209);
+    border-radius: 10px;
+    max-width: 126px;
+    max-inline-size: 150px;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+}
+
+
+
+
+table,
+th,
+
+
+td {
+    border: 1px solid rgb(118, 200, 221);
+}
+
+tr:hover {
+    background-color: yellow;
+}
+
+th {
+    background-color: #01207c;
+    color: white;
+    font-family:  sans-serif;
+}
+
+
+
+
+button {
+    border-radius: 12px;
+    color: white;
+    background-color: #690303;
+    cursor: pointer;
+}

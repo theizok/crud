@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+      {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+   </head>
+
+<body>
+    <header><h1 class="titulo">Miscelanea Pepito</h1></header>
+    <nav>
+        <h1 class="titulo3">Formulario inventario</h1>
+        {% load static %}
+        <img src = "{% static 'css/fiora.jpg' %}" height="150" width="150" class="d-inline-block align-top">
+<br>
+
+    </nav>
+    <main> 
+         <form class="container" method="POST" action="/emp">
+                {% csrf_token %}
+                <div>
+            
+                    <p>
+                        <h3  class="titulo">Ingrese detalles</h3>
+                    </p>
+                    <div >
+                        <p class="id" maxlenght="40">Id del producto:</p>{{ form.eid }}
+                    </div>
+                    <div  >
+                        <p class="nombre" maxlenght="40">Nombre del producto:</p>{{ form.ename }}
+                    </div>
+                    <div>
+                        <p class="correo">Precio del producto:</p>{{ form.eemail }}
+                    </div>
+                    <div>
+                        <p class = "contacto">Cantidad de producto:</p>{{ form.econtact }}
+                    </div>
+                    <div>
+                        <p class="pedido">Numero de pedidos:</p>{{ form.epedido }}
+                    </div>
+                    <div>
+                        <p class="distribuidor">Distribuidor:</p>{{ form.edistribuidor }}
+                    </div>
+                    <div>
+                      <br>
+                      <button type="submit">Ingresar</button>
+                     </div>
+             </div>    
+        </form>
+   </main>
+    <br>
+    <br>
+</body>
+
+</html>

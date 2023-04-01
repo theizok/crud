@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inventario</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    {% load static %}
+        <img src = "{% static 'css/fiora.jpg' %}" height="150" width="150" class="d-inline-block align-top">
+</head>
+
+<body>
+    <table>
+        <thead>
+            <h1 class="titulo2">Miscelanea Pepito</h1>
+            <tr>
+                <th>Id del producto</th>
+                <th>Nombre del producto</th>
+                <th>Precio del producto</th>
+                <th>Cantidad de producto</th>
+                <th>Numero de pedidos</th>
+                <th>Distribuidor</th>
+                <th>Accion</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for employee in employees %}
+            <tr>
+                <td>{{ employee.eid }}</td>
+                <td>{{employee.ename}}</td>
+                <td>{{employee.eemail}}</td>
+                <td>{{employee.econtact}}</td>
+                <td>{{employee.epedido }}</td>
+                <td>{{employee.edistribuidor}}</td>
+                <td>
+                    <a href="/edit/{{ employee.id }}">Editar</a>
+                    <a href="/delete/{{employee.id}}">Eliminar</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <br>
+    <br>
+    <button><a style="color:white;" href="/emp">Añadir mas informacion</a></button>
+</body>
+
+</html>
